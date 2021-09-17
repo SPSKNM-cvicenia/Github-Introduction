@@ -1,0 +1,1 @@
+Zakladne obrazky pre VS
