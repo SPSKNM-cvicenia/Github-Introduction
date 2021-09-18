@@ -144,7 +144,6 @@ Po úprave súborov je potrebné vykonať **commit**.
 
 ![imgrd7](https://github.com/SPSKNM-cvicenia/Github-Introduction/blob/main/uploads/rider/14.png "rider")
 
-![imgrd7](https://github.com/SPSKNM-cvicenia/Github-Introduction/blob/main/uploads/rider/14.png "rider")
  
 ### Sťahovanie zmien z Githubu / Fetchovanie
 Zmeny, ktoré boli vykonané v Repozitári niekým iným, sa Ti automaticky nestiahnú, musíš si ich najskôr **fetchnúť** a potom **pullnúť**.
@@ -184,7 +183,7 @@ Github poskytuje pre študentov sadu nástrojov a výhod **zadarmo**. Príkladom
 Na balíček potrebujete: 
 1. **GitHub** Účet
 2. Potvrdenie o návšteve školy z **EduPage** alebo **ISIC**
-3. **Školskú** e-mailovú adresu
+3. **Školskú** e-mailovú adresu (@spsknm.onmicrosoft.com)
 
 Začni tým, že si pridáš v nastaveniach školskú emailovú adresu ako **sekundárnu**:
 
