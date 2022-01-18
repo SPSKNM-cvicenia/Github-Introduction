@@ -330,9 +330,7 @@ Si v tíme so spolužiakom a máte spoločne robiť na projekte, no nechceš, ab
 
 3. Klikneš na **Invite a collaborator**.
 
-![img5](
-
-https://github.com/SPSKNM-cvicenia/Github-Introduction/blob/main/uploads/privrep4.png "settings")
+![img5](https://github.com/SPSKNM-cvicenia/Github-Introduction/blob/main/uploads/privrep4.png "settings")
 
   
 
