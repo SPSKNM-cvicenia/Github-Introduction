@@ -410,6 +410,8 @@ A žiadosť odošli. GitHub by sa mal ozvať do **30 dní**.
   
 
 *Pozn.: Odporúčame, aby si si prečítal(a) oficiálnu dokumentáciu GitHub Education: https://docs.github.com/en/education. Takisto odporúčame aby si si prečítal(a) FAQ Github Education v prípade že nemáš ISIC: https://github.blog/2019-07-30-how-to-get-the-github-student-developer-pack-without-a-student-id/*
+  
+*Pozn.: Github mení tieto požiadávky, čiže táto časť môže byť out-of-date. V prípade, že je, uvítame pull requesty s opraveným postupom.*
 
 ## Zdroje <a id = zdroje>
 
