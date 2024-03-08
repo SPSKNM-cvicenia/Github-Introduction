@@ -3,7 +3,7 @@
 
   
 
-Asi si sa ešte s GitHubom nestretol(nestretla), to však nevadí. V tejto príručke Ti vysvetlíme, ako funguje **Git**, zameriame sa aj na dôležité pojmy ako **Commit** alebo **Pull Request**.
+Asi si sa ešte s GitHubom nestretol (nestretla), to však nevadí. V tejto príručke Ti vysvetlíme, ako funguje **Git**, zameriame sa aj na dôležité pojmy ako **Commit** alebo **Pull Request**.
 
   
 
@@ -14,6 +14,7 @@ Asi si sa ešte s GitHubom nestretol(nestretla), to však nevadí. V tejto prír
 *  [Setup / Commitovanie z Visual Studia](#commit_vs)
 *  [Setup / Commitovanie z GitHub Desktop](#github_desktop)
 *  [Setup / Commitovanie z Jetbrains Rider](#commit_rider)
+*  [Setup / Commitovanie z terminálu](#commit_cmd)
 *  [Kolaborácia medzi spolužiakmi](#kolaboracia)
 *  [GitHub Student Developer Pack](#student_pack)
 *  [Zdroje](#zdroje)
@@ -32,7 +33,7 @@ Asi si sa ešte s GitHubom nestretol(nestretla), to však nevadí. V tejto prír
 
   
 
-**Commit** - Commit je **konkrétna zmena** v projekte. Keď commituješ, Git vytvára **jedinečné ID**, ktoré Ti umožní uchovávať záznamy o týchto zmenách a aj to, **kto** a **kedy** danú zmenu vykonal.
+**Commit** - Commit je nejaké **zoskupenie zmien** v projekte. Keď commituješ, Git vytvára **jedinečné ID**, ktoré Ti umožní uchovávať záznamy o týchto zmenách a aj to, **kto** a **kedy** danú zmenu vykonal.
 
   
 
@@ -48,19 +49,23 @@ Asi si sa ešte s GitHubom nestretol(nestretla), to však nevadí. V tejto prír
 
   
 
-**Push** - Pushnúť znamená, že zmeny, ktoré sa nachádzajú v **commitoch** a ešte neboli pushnuté, sa objavia v **repozitári**.
+**Push** - Nahranie lokálnych zmien (ešte nie sú na GitHube), ktoré sa nachádzajú v **commitoch**, na **GitHub**.
 
   
 
-**Pull** - Pullnuť znamená, že ak nemáš aktuálnu verziu svojho repozitára, tak sa ti z GitHubu stiahne **aktuálna verzia**, v prípade, že si nejaké súbory upravil, tak môže nastať **konflikt**, ktorý je nutné vyriešiť.
-
+**Pull** - Stiahnutie **aktuálnej verzie** repozitára z GitHubu, v prípade, že si nejaké súbory upravil, tak môže nastať konflikt (**Merge Conflict**), ktorý je nutné vyriešiť.
   
+
 
 **Branch** - Branch je **vetva projektu**, ktorú môžeš pridať, ak chceš opraviť chybu alebo s niečím experimentovať, ale nechceš, aby ti to ovplyvnilo Tvoj projekt. Každý repozitár má **default branch**, ale môže obsahovať aj ďaľšie.
 
   
 
 **Merge** - Merge je **zlúčenie** jednej branche do druhej za vykonania **Pull Requestu**.
+
+
+
+**Merge Conflict** - Je stav, kedy existuje viacero **novších** verzií nejakého súboru v kóde a nie je zrejmé, ktorá verzia sa má použiť.
 
   
 
@@ -72,11 +77,11 @@ Asi si sa ešte s GitHubom nestretol(nestretla), to však nevadí. V tejto prír
 
   
 
-**readme** - Je to textový súbor obsahujúci informácie o repozitári. Keďže sa automaticky zobrazuje **pod repozitárom**, je zvyčajne prvým súborom, ktorý návštevník Tvojho repozitára uvidí. Tvorí sa v **markdowne**.
+**ReadMe** - Je to textový súbor obsahujúci informácie o repozitári. Keďže sa automaticky zobrazuje **pod repozitárom**, je zvyčajne prvým súborom, ktorý návštevník Tvojho repozitára uvidí. Tvorí sa v **MarkDowne**.
 
   
 
-**.gitignore** - gitignore je súbor, ktorý špecifikuje, ktoré časti by sa nemali nahrávať spolu so zmenami v commite. Používa sa na **vyfiltrovanie zbytočných súborov**, napríklad tých, ktoré vytvorí IDE.
+**.gitignore** - gitignore je súbor, ktorý špecifikuje, ktoré časti by sa nemali nahrávať spolu so zmenami v commite. Používa sa na **vyfiltrovanie zbytočných súborov**, napríklad tých, ktoré vytvorí IDE, prípadne **súborov s citlivými dátami**.
 
   
 
@@ -156,7 +161,7 @@ Po úprave súborov musíš commitnúť zmeny.
 
   
 
-### Sťahovanie zmien z Githubu / Fetchovanie
+### Sťahovanie zmien z GitHubu / Fetch
 
 Zmeny, ktoré boli vykonané v Repozitári niekým iným, sa Ti automaticky nestiahnú, musíš si ich najskôr **fetchnúť** a potom **pullnúť**.
 
@@ -225,7 +230,7 @@ Po úprave súborov je potrebné vykonať **commit**. GitHub Desktop Ti automati
 
 ![img_gh10](https://github.com/SPSKNM-cvicenia/Github-Introduction/blob/main/uploads/ghd/10.png  "ghd")
 
-### Sťahovanie zmien z Githubu / Fetchovanie
+### Sťahovanie zmien z GitHubu / Fetch
 Zmeny, ktoré boli vykonané v repozitári niekým iným, sa Ti automaticky nestiahnú, musíš si ich najskôr **fetchnúť** a potom **pullnúť**.
 
 1. Na paneli hore klikni na **Fetch Origin**. Toto overí stav, v ktorom sa nachádza repozitár a či je k dispozicií novší commit.
@@ -300,7 +305,7 @@ Po úprave súborov je potrebné vykonať **commit**.
 
   
 
-### Sťahovanie zmien z Githubu / Fetchovanie
+### Sťahovanie zmien z GitHubu / Fetch
 
 Zmeny, ktoré boli vykonané v Repozitári niekým iným, sa Ti automaticky nestiahnú, musíš si ich najskôr **fetchnúť** a potom **pullnúť**.
 
@@ -312,7 +317,55 @@ Zmeny, ktoré boli vykonané v Repozitári niekým iným, sa Ti automaticky nest
 
 ![imgrd7](https://github.com/SPSKNM-cvicenia/Github-Introduction/blob/main/uploads/rider/17.png "rider")
 
-  
+
+
+## Setup / Commitovanie z terminálu <a id = commit_cmd>
+
+### Setup
+1. Stiahni **GIT** (návod na stiahnutie je k dispozícii na [ich stránkach](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+2. Nakonfiguruj svoje **meno** a **email**.
+```
+$ git config --global user.name "Tvoj Github Login"
+$ git config --global user.email "tvoj_email@nieco.nieco"
+```
+3. **Inicializuj** GitHub repozitár.
+```
+$ git init
+```
+4. **Napáruj** si repozitár na terminál.
+```
+$ git remote add origin "https://github.com/github_login/meno_repozitara.git"
+```
+4. Nastav si **vetvu**, v ktorej chceš pracovať (spravidla `main`).
+```
+$ git branch -M main
+```
+### Commitovanie
+1. Vyber všetky **zmeny**, ktoré chceš **nahrať**.
+```
+$ git add <zmenený_súbor>
+```
+Ak chceš nahrať **všetky súbory**, tak treba zadať:
+```
+$ git add .
+```
+2. **Commitni** zmeny s vhodným **popisom** zmien.
+```
+$ git commit -m "toto je popis commitu"
+```
+3. **Nahraj** commitnuté zmeny na GitHub.
+```
+$ git push
+```
+### Sťahovanie zmien z GitHubu / Fetch
+1. Pokiaľ chceš iba v terminále **aktualizovať povedomie** o **aktuálnej verzii** na GitHube.
+```
+$ git fetch
+```
+2. Pokiaľ chceš nie len zistiť, aké zmeny boli prevedené, ale chceš ich aj **stiahnuť**.
+```
+$ git pull
+```
 
 ## Kolaborácia medzi spolužiakmi <a id = kolaboracia>
 
