@@ -3,7 +3,7 @@
 
   
 
-Asi si sa ešte s GitHubom nestretol (nestretla), to však nevadí. V tejto príručke Ti vysvetlíme, ako funguje **Git**, zameriame sa aj na dôležité pojmy ako **Commit** alebo **Pull Request**.
+Asi si sa ešte s GitHubom nestretol/a, to však nevadí. V tejto príručke Ti vysvetlíme, ako funguje **Git**, zameriame sa aj na dôležité pojmy ako **Commit** alebo **Pull Request**.
 
   
 
@@ -77,7 +77,7 @@ Asi si sa ešte s GitHubom nestretol (nestretla), to však nevadí. V tejto prí
 
   
 
-**ReadMe** - Je to textový súbor obsahujúci informácie o repozitári. Keďže sa automaticky zobrazuje **pod repozitárom**, je zvyčajne prvým súborom, ktorý návštevník Tvojho repozitára uvidí. Tvorí sa v **MarkDowne**.
+**readme.md** - Je to textový súbor obsahujúci informácie o repozitári. Keďže sa automaticky zobrazuje **pod repozitárom**, je zvyčajne prvým súborom, ktorý návštevník Tvojho repozitára uvidí. Tvorí sa v **MarkDowne**.
 
   
 
@@ -328,15 +328,17 @@ Zmeny, ktoré boli vykonané v Repozitári niekým iným, sa Ti automaticky nest
 $ git config --global user.name "Tvoj Github Login"
 $ git config --global user.email "tvoj_email@nieco.nieco"
 ```
-3. **Inicializuj** GitHub repozitár.
+3. **Inicializuj** Git repozitár v zložke. Tento príkaz vytvorí nový tzv. lokálny repozitár. Lokálne repozitáre uchovávajú zmeny iba u teba na počítači.
 ```
 $ git init
 ```
-4. **Napáruj** si repozitár na terminál.
+
+Ak chceš používať GitHub, musíš ho pridať ako remote origin. Remote origin je repozitár, ktorý bude synchronizovaný s tvojím lokálnym. To znamená, že zmeny vykonané na GitHube (ako na remote) si budeš môcť pullnuť, a zmeny vykonané v lokálnom repozitári budeš môcť pushnuť. Tento proces je však automatizovaný, stačí teda vykonávať príkazy zo sekcií Commitovanie a Sťahovanie zmien z GitHubu. Ak chceš pridať tvoje repo ako remote, vykonaj následovný príkaz, len si zmeň URL adresu:
 ```
 $ git remote add origin "https://github.com/github_login/meno_repozitara.git"
 ```
-4. Nastav si **vetvu**, v ktorej chceš pracovať (spravidla `main`).
+
+3. Nastav si **vetvu**, v ktorej chceš pracovať (spravidla `main` alebo `master`).
 ```
 $ git branch -M main
 ```
@@ -345,7 +347,7 @@ $ git branch -M main
 ```
 $ git add <zmenený_súbor>
 ```
-Ak chceš nahrať **všetky súbory**, tak treba zadať:
+poprípade, ak chceš nahrať **všetky súbory**, tak treba zadať:
 ```
 $ git add .
 ```
@@ -353,16 +355,16 @@ $ git add .
 ```
 $ git commit -m "toto je popis commitu"
 ```
-3. **Nahraj** commitnuté zmeny na GitHub.
+3. **Pushni** commitnuté zmeny na GitHub.
 ```
 $ git push
 ```
 ### Sťahovanie zmien z GitHubu / Fetch
-1. Pokiaľ chceš iba v terminále **aktualizovať povedomie** o **aktuálnej verzii** na GitHube.
+1. Pokiaľ chceš **iba zistit informácie** o **aktuálnej verzii** remote repozitára, vykonaj príkaz:
 ```
 $ git fetch
 ```
-2. Pokiaľ chceš nie len zistiť, aké zmeny boli prevedené, ale chceš ich aj **stiahnuť**.
+2. Pokiaľ ích **chceš následovne stiahnuť**, použiješ príkaz:
 ```
 $ git pull
 ```
