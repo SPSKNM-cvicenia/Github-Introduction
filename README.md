@@ -17,6 +17,7 @@ Asi si sa ešte s GitHubom nestretol/a, to však nevadí. V tejto príručke Ti 
 *  [Setup / Commitovanie z terminálu](#commit_cmd)
 *  [Kolaborácia medzi spolužiakmi](#kolaboracia)
 *  [GitHub Student Developer Pack](#student_pack)
+*  [Praktické úlohy na precvičenie (10 úloh)](ULOHY.md)
 *  [Zdroje](#zdroje)
 
   
